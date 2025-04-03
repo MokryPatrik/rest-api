@@ -40,23 +40,24 @@ This will start the following services:
 - Nginx web server
 - MySQL database
 
-### 4. Access the application
 
-The API will be available at:
-```
-http://localhost:8080
-```
-
-### 5. Install composer
+### 4. Install composer
 
 ```bash
 docker-compose exec php composer install
 ```
 
-### 6. Run database migrations
+### 5. Run database migrations
 
 ```bash
 docker-compose exec php php migrations/001_create_products_table.php
+```
+
+### 6. Access the application
+
+The API will be available at:
+```
+http://localhost:8080
 ```
 
 ### 7. Run tests
